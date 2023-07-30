@@ -7,7 +7,7 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;700&display=swap" rel="stylesheet">
     <!--Bootstrap Css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--My Css-->
@@ -16,8 +16,8 @@
 <body>
     <header class="header">
         <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-            <div class="bg-dark p-4">
-                <ul>
+            <div class="bg-dark navegacion">
+                <ul class="navegacion__enlaces">
                     <li><a href="#">Cursos</a></li>
                     <li><a href="#">Tienda</a></li>
                     <li><a href="#">Nosotros</a></li>
@@ -25,7 +25,7 @@
                 </ul>
             </div>
           </div>
-          <nav class="navbar navbar-dark bg-dark navegacion">
+          <nav class="navbar navbar-dark bg-dark p-4">
             <div class="container-fluid">
                 <div class="logo"> <!--Logo-->
                     <div class="logo__marco">
@@ -33,7 +33,9 @@
                         <img src="./img/fireLogo.png" alt="Fuego Logo">
                       </div>
                     </div>
-                    <p class="logo__texto">Firefighter</p>
+                    <p class="logo__texto">
+                      Fire<span class="logo__texto--thin">fighter</span>
+                    </p>
                 </div>             <!--Logo-->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
