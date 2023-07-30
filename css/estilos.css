@@ -79,3 +79,24 @@ ul {
     color: white;
     margin-left: .2px;
 }
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #212529;
+        padding: 2rem;
+    }
+    .navegacion:not(.show) {
+        display: block;
+    }
+    .navegacion__enlaces {
+        display: flex;
+        column-gap: 8rem;
+        font-size: 1.8rem;
+    }
+    .boton-header {
+        display: none;
+    }
+}
