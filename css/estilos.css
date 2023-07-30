@@ -12,7 +12,10 @@
     box-sizing: border-box;
 }
 html {/*Resetear 1rem = 10px*/font-size: 62.5%;}
-body {font-size: 1rem;}
+body {
+    width: 100vw;
+    font-size: 1rem;
+}
 a {text-decoration: none;}
 li {list-style: none;}
 ul {
@@ -20,6 +23,11 @@ ul {
     margin: 0;
 }
 /*Utilidades*/
+/*Header*/
+.header {
+    max-width: 100%;
+    min-width: 375px;
+}
 /*Navegacion*/
 .navegacion__enlaces {
     text-align: center;
