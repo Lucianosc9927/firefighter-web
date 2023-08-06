@@ -198,6 +198,24 @@ ul  {
         height: 40rem;
     }
 }
+/*Footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+.redes__enlaces {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.redes__enlaces li > a {
+    font-size: 1.5rem;
+    color: var(--clr-blanco);
+    margin-left: .6rem;
+}
+
 @media (min-width: 1200px) {
     /*Header*/
     .header {
@@ -230,5 +248,14 @@ ul  {
     .hero__img {
         width: 40rem;
         height: 30rem;
+    }
+    /*Footer*/
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .redes__enlaces {
+        flex-direction: row;
+        column-gap: 4rem;
     }
 }
