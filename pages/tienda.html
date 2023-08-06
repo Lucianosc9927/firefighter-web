@@ -47,6 +47,39 @@
     </header>
     <main class="main">
         <h1>Tienda</h1>
+        <section class="tienda">
+            <div class="producto">
+                <h3 class="producto__nombre">Remera Firefighter</h3>
+                <img src="../img/productoD-1.png" alt="Remera bomberos">
+                <div class="producto__descripcion">
+                    <form>
+                        <fieldset class="producto__talle">
+                            <legend>Talle</legend>
+                            <input type="radio" id="L" name="talle" value="L">
+                            <label for="L">L</label>
+                            <input type="radio" id="XL" name="talle" value="XL">
+                            <label for="css">XL</label>
+                            <input type="radio" id="M" name="talle" value="M">
+                            <label for="javascript">M</label>
+                        </fieldset>
+                        <fieldset class="producto__color">
+                            <legend>Color</legend>
+                            <input type="radio" id="negro" name="color" value="negro">
+                            <label for="negro">Negro</label>
+                            <input type="radio" id="blanco" name="blanco" value="blanco">
+                            <label for="blanco">Blanco</label>
+                            <input type="radio" id="azul" name="azul" value="azul">
+                            <label for="azul">Azul</label>
+                        </fieldset>
+                        <fieldset class="producto__cantidad">
+                            <legend>Cantidad</legend>
+                            <input type="number" name="cantidad" id="cantidad"  min="0" max="4">
+                            <label for="cantidad">Cantidad</label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <!--Bootstrap Js-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
