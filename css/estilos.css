@@ -137,7 +137,10 @@ ul  {
 .producto__imagen {
     width: 20rem;
 }
-
+.carousel-item img {
+    height: 40rem;
+    min-width: 290px;
+}
 
 
 @media (min-width: 480px) {
