@@ -156,6 +156,13 @@ ul  {
 .nosotros img{
     width: 20rem;
 }
+.tienda__informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    margin: 20px;
+  }
 
 @media (min-width: 480px) {
     /*Header.*/
@@ -223,7 +230,11 @@ ul  {
     .nosotros img {
         width: 50rem;
     }
+    .tienda__informacion p {
+        width: 500px;
+    }
     
+
 }
 /*Footer*/
 .footer {
@@ -285,4 +296,50 @@ ul  {
         flex-direction: row;
         column-gap: 4rem;
     }
+    .tienda__informacion p {
+        width: 800px;
+      }
+
 }
+.formulario {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contenedor__formulario {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: grey;
+    padding: 32px;
+    box-shadow: 2px 4px 5px black;
+  }
+  label {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  input {
+    height: 30px;
+    padding: 8px;
+  }
+  :is(input,textarea)::placeholder {
+    font-size: 1.1rem;
+  }
+  textarea {
+    height: 80px;
+    padding: 8px;
+    max-width: 100%;
+  }
+  .button {
+    height: 60px;
+    border: none;
+    background-color: black;
+    color: orange;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .button:hover {
+    background-color: orange;
+    color: black;
+  }

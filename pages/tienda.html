@@ -47,10 +47,21 @@
             </div>
           </nav>
     </header>
-    <main class="main container">
-        <h1 class="text-center">Tienda</h1>
-        <p class="text-center m-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, recusandae? Ex eaque consequatur iste tempore culpa voluptas aperiam nulla, ut quas corrupti voluptate tempora mollitia saepe eligendi? Consequatur repellendus atque voluptates pariatur est eaque quidem, necessitatibus ad voluptatem, quasi nam? Aliquam recusandae voluptatum natus enim quia molestiae obcaecati error consequatur laboriosam? Culpa sit quaerat saepe exercitationem dicta ipsum. Provident quod voluptate facere illo dolorem possimus non deserunt ullam, aliquam omnis, error, inventore suscipit sequi magnam laudantium hic consequuntur sed placeat?</p>
-        <section class="tienda row row-gap-3">
+    <main class="main">
+        <section class="tienda">
+            <h1 class="text-center">Tienda</h1>
+            <div class="tienda__informacion">
+              <h2 class="tienda__informacion">¿Como comprar?</h2>
+              <p class="text-center">Seleccion los articulos del catalago que econtraras a continuacion. Luego en el formulario que encontraras debajo te pedimos tus datos y no estaremos comunicando via email para finalizar la compra.</p>
+              <i class="fa-solid fa-truck-fast fa-2xl" style="color: #d93a3a;"></i>
+            </div>
+            <div class="tienda__informacion">
+              <h2>¿En que destinamos el dinero?</h2>
+              <p class="text-center">Todo lo recaudado se reinvierte para seguir creciendo y ofreciendo mejores cursos y practicas. Compra de equipamiento y materiales escensiales para el trabajo.</p>
+              <i class="fa-solid fa-handshake-angle fa-2xl" style="color: #62d331;"></i>
+            </div>
+          </section>
+        <section class="tienda row row-gap-3 bg-secondary p-3">
             <div class="producto col-xl-3 col-md-4 col-sm-6">
                 <h3 class="producto__nombre">Remera Firefighter</h3>
                 <img class="producto__imagen" src="../img/productoD-1.png" alt="Remera bomberos">
@@ -257,6 +268,26 @@
                 </form>
                 
             </div>
+        </section>
+        <section class="comprar m-3">
+            <h2 class="text-center">Comprar</h2>
+            <form class="formulario">
+                <div class="contenedor__formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Scollo Luciano">
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="tuemail@gmail.com">
+                
+                <label for="asunto">Descripcion del producto:</label>
+                <input type="email" name="asunto" id="asunto" placeholder="Que nos quieres comunicar">
+                
+                <label for="mensaje">Escriba su mensaje:</label>
+                <textarea id="mensaje" placeholder="Escribe aqui..."></textarea>
+                
+                <input type="submit" name="enviar" id="enviar" class="button">
+                </div>
+            </form>
         </section>
     </main>
     <footer class="footer bg-dark p-4 ">
