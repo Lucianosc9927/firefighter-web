@@ -5,6 +5,11 @@
   --ff-logo: "Noto Serif", serif;
   /*Colores*/
   --clr-blanco: #ffffff;
+  --clr-rojo: #d43030;
+  /*Iconos*/
+  --icon-whatsapp: "\f232";
+  --icon-instagram: "\f16d";
+  --icon-email: "\f1d8";
 }
 /*Reseteo*/
 * {
@@ -40,11 +45,12 @@ ul {
 /*Header*/
 .header {
   background-color: black;
-  text-align: center;
 }
 /*Navegacion*/
 .navegacion__link {
   display: block;
+  text-align: center;
+  font-size: 1.5rem;
   color: var(--clr-blanco);
   padding: 1rem 0;
 }
@@ -171,21 +177,21 @@ ul {
   margin: 20px;
 }
 /*Footer*/
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4rem;
+.icon::before {
+  font: var(--fa-font-brands);
+  font-size: 2rem;
+  padding-right: 1rem;
+  color: var(--clr-rojo);
 }
-.redes__enlaces {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
+.icon-wp::before {
+  content: var(--icon-whatsapp);
 }
-.redes__enlaces li > a {
-  font-size: 1.5rem;
-  color: var(--clr-blanco);
-  margin-left: 0.6rem;
+.icon-ig::before {
+  content: var(--icon-instagram);
+}
+.icon-email::before {
+  font: var(--fa-font-regular);
+  content: var(--icon-email);
 }
 
 @media (min-width: 480px) {
