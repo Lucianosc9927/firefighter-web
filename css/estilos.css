@@ -214,10 +214,10 @@ ul {
     display: none;
   }
   /*Navegacion*/
-  .nose:not(.show) {
+  .contenedor-nav:not(.show) {
     display: block;
   }
-  .nose {
+  .contenedor-nav {
     width: 100%;
   }
   .navegacion__enlaces {
