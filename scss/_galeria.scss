@@ -1,0 +1,12 @@
+/*Galeria*/
+.galeria {
+  background-color: grey;
+  padding: 1rem;
+  text-align: center;
+}
+.galeria__img {
+  max-width: 500px;
+  height: 40rem;
+  object-fit: cover;
+  margin: 0 auto;
+}

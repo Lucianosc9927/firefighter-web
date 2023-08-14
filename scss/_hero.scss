@@ -1,0 +1,46 @@
+/*Hero*/
+.hero {
+  text-align: center;
+}
+.hero__img {
+  max-width: 300px;
+  width: 100%;
+  height: 250px;
+  border: 0.4rem solid black;
+  object-fit: cover;
+}
+.hero__boton {
+  height: 6rem;
+  border: none;
+  background-color: royalblue;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 95%;
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  .hero__img {
+    width: 40rem;
+    height: 40rem;
+  }
+  .hero__contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+  }
+  .hero__texto {
+    width: 40%;
+    font-size: 2rem;
+  }
+  .hero__boton {
+    width: 40%;
+    display: block;
+    margin: 2rem auto;
+  }
+  .hero__img {
+    width: 40rem;
+    height: 30rem;
+  }
+}
