@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta name="description" content="Cursos, charlas y capacitaciones hecha por y para Bomberos, con los mejores capacitadores del pais.">
+    <meta name="keywords"  content="APRENDER, CURSOS, INCENDIO, MATAFUEGO, VOLUNTARIOS, RESCATE">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firefighter 🔥</title>
@@ -13,73 +15,57 @@
     <!--Bootstrap Css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--My Css-->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-    <header class="header">
-        <div class="collapse navegacion" id="navbarToggleExternalContent" data-bs-theme="dark">
-            <div class="bg-dark ">
-                <ul class="navegacion__enlaces">
-                    <li><a href="../pages/cursos.html">Cursos</a></li>
-                    <li><a href="../pages/tienda.html">Tienda</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-          </div>
-          <nav class="navbar navbar-dark bg-dark p-4">
-            <div class="container-fluid p-0">
-                <div class="logo"> <!--Logo-->
-                    <div class="logo__marco">
-                      <div class="logo__imagen">
-                        <img src="../img/fireLogo.png" alt="Fuego Logo">
-                      </div>
-                    </div>
-                    <a href="../index.html">
-                        <p class="logo__texto">
-                        Fire<span class="logo__texto--thin">fighter</span>
-                        </p>
-                    </a>
-                </div>             <!--Logo-->
-              <button class="navbar-toggler boton-header" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-          </nav>
-    </header>
+  <header class="header barra">
+    <div class="logo">
+      <p class="logo__texto">Bomberos <span class="logo__texto--grande">AR</span></p> 
+    </div>
+    <input class="menu__check" type="checkbox">
+    <nav class="navegacion">
+      <ul class="navegacion__enlaces">
+        <li>
+          <a class="navegacion__link" href="../index.html">Inicio</a>
+        </li>
+        <li>
+          <a class="navegacion__link" href="cursos.html">Cursos</a>
+        </li>
+        <li>
+          <a class="navegacion__link" href="tienda.html">Tienda</a>
+        </li>
+        <li>
+          <a class="navegacion__link" href="nosotros.html">Nosotros</a>
+        </li>
+        <li>
+          <a class="navegacion__link" href="contacto.html">Contacto</a>
+        </li>
+      </ul> <!--navegacion__enlaces-->
+    </nav>
+  </header>
     <main class="main container">
         <h1 class="text-center">Cursos</h1>
         <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore iste, dolorum, dolores, deleniti officia id assumenda deserunt ipsum obcaecati excepturi eius incidunt voluptatibus exercitationem voluptatem eos et omnis odit corporis fuga ex cumque nam aperiam ipsa inventore. Harum aspernatur error atque ipsam vel nesciunt in itaque placeat doloribus eligendi. Aliquam, voluptates maxime explicabo recusandae sunt, harum iste alias ipsa molestiae et dicta cupiditate voluptatibus ex quisquam veniam itaque. Velit, accusamus consequuntur vitae asperiores tenetur eum reiciendis totam corporis suscipit voluptas, porro dolorum, necessitatibus nemo aliquid quod aperiam reprehenderit at facilis incidunt? Obcaecati, asperiores error porro suscipit laudantium laboriosam debitis tempora saepe tempore tenetur iusto ad perferendis. Enim vel repellendus maxime nemo natus magnam quaerat eligendi delectus obcaecati asperiores dolores odio repudiandae ratione praesentium, reprehenderit tempore quibusdam harum ut fugiat esse eos facilis tenetur quia. Fugiat numquam atque architecto adipisci, incidunt voluptatum, nihil sed quisquam commodi recusandae cumque. Placeat et nam, porro veniam ipsam suscipit magni labore deserunt? Vitae fugiat atque perferendis quibusdam veniam nostrum sed deserunt aut placeat. Incidunt hic, provident ullam error voluptatem autem cumque placeat quisquam maxime et tempore facere est nulla voluptatum culpa corporis laborum commodi ex sequi officia ea doloremque quibusdam minima labore. Quaerat commodi cumque officia praesentium velit non eligendi minima. Dolor doloremque eligendi voluptas possimus ipsum nihil architecto saepe quae voluptates repudiandae labore provident quis, atque aliquid ipsam! A quisquam modi iure nesciunt consectetur voluptatem ducimus culpa consequuntur, quam nobis eveniet architecto autem doloremque sunt ipsam, blanditiis mollitia maiores? Praesentium laboriosam qui eos aperiam.</p>
     </main>
-    <footer class="footer bg-dark p-4 ">
-      <div class="logo"> <!--Logo-->
-          <div class="logo__marco">
-            <div class="logo__imagen">
-              <img src="../img/fireLogo.png" alt="Fuego Logo">
-            </div>
-          </div>
-          <a href="../index.html">
-            <p class="logo__texto">
-            Fire<span class="logo__texto--thin">fighter</span>
-            </p>
-          </a>
-      </div>             <!--Logo-->
-      <div class="redes">
-        <ul class="redes__enlaces">
+    <footer class="footer barra">
+      <div class="logo">
+        <p class="logo__texto">Bomberos <span class="logo__texto--grande">AR</span></p> 
+      </div>
+      <div class="navegacion">
+        <ul class="navegacion__enlaces">
           <li>
-            <i class="fa-brands fa-instagram fa-2xl" style="color: #a30f0f;"></i>
-            <a href="#">Instagram</a>
+            <a class="navegacion__link icon icon-wp" href="#">Instagram</a>
           </li>
           <li>
-            <i class="fa-brands fa-whatsapp fa-2xl" style="color: #961d1d;"></i>
-            <a href="#">Whatsapp</a>
+            <a class="navegacion__link icon icon-ig" href="#">Whatsapp</a>
           </li>
           <li>
-            <i class="fa-regular fa-paper-plane fa-2xl" style="color: #9e2929;"></i>
-            <a href="contacto.html">Contacto</a>
+            <a class="navegacion__link icon icon-email" href="contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
+      
+      <!--Logo-->
     </footer>
     <!--Bootstrap Js-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

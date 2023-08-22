@@ -5,5 +5,14 @@
     .navegacion {
         display: block;
         position: static;
+
+
+    }
+}
+
+
+@media (min-width: 768px) {
+    .footer .navegacion {
+        margin: 0 auto;
     }
 }

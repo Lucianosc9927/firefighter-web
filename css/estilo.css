@@ -64,7 +64,8 @@ a {
       font-size: 4.5rem; } }
 
 .barra {
-  height: 20vh; }
+  height: 20vh;
+  padding: 1rem; }
 
 .header {
   position: relative;
@@ -271,7 +272,7 @@ a {
     .articulo .articulo__imagen {
       grid-area: articulo__imagen; } }
 
-.tienda {
+.tienda-index {
   height: 80vh;
   max-width: 100%;
   background-image: url(../img/banner-tienda.webp);
@@ -279,22 +280,54 @@ a {
   background-position: center;
   background-size: cover;
   padding: 2rem; }
-  .tienda h2 {
+  .tienda-index h2 {
     font-size: 5rem;
     font-weight: bold;
     text-align: center; }
-  .tienda button {
+  .tienda-index button {
     background-color: transparent;
     border: none;
     padding: 2rem;
     font-size: 3rem;
     font-weight: bold;
     backdrop-filter: opacity(20%); }
-    .tienda button::hover {
+    .tienda-index button::hover {
       cursor: pointer; }
+
+/*Tienda*/
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.producto__formulario {
+  margin-top: 1rem; }
+
+.producto__descripcion {
+  background-color: #dfdfdf;
+  padding: 2rem;
+  border-radius: 8px; }
+
+.producto__imagen {
+  width: 20rem; }
+
+.producto__selector {
+  width: 3rem;
+  height: 3rem; }
+
+.tienda__informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  margin: 20px; }
 
 .footer {
   text-align: center; }
   .footer .navegacion {
     display: block;
     position: static; }
+
+@media (min-width: 768px) {
+  .footer .navegacion {
+    margin: 0 auto; } }
