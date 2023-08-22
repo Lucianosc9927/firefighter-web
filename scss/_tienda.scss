@@ -1,0 +1,29 @@
+.tienda {
+    height: 80vh;
+    max-width: 100%;
+    background-image: url(../img/banner-tienda.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+
+    & h2 {
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    & button {
+        background-color: transparent;
+        border: none;
+        padding: 2rem;
+        font-size: 3rem;
+        font-weight: bold;
+        backdrop-filter: opacity(20%);
+
+
+        &::hover {
+            cursor: pointer;
+        }
+    }
+}
