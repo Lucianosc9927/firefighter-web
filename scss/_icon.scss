@@ -1,0 +1,22 @@
+.icon::before {
+  font: var(--fa-font-brands);
+  font-size: 2rem;
+  padding-right: 1rem;
+  color: var(--clr-rojo);
+}
+.icon-wp::before {
+  content: var(--icon-whatsapp);
+}
+.icon-ig::before {
+  content: var(--icon-instagram);
+}
+.icon-email::before {
+  font: var(--fa-font-regular);
+  content: var(--icon-email);
+  font-size: 2rem;
+}
+.icon-arrowDown::before {
+  font: var(--fa-font-solid);
+  content: "\f063";
+  font-size: 2rem;
+}
