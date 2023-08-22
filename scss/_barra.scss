@@ -1,58 +1,88 @@
 .barra {
-  background-color: black;
+  height: 20vh;
 }
-.navegacion__link {
-  display: block;
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navegacion {
   text-align: center;
-  font-size: 1.5rem;
-  color: var(--clr-blanco);
-}
-.navegacion__link--clr-secondary {
-  background-color: #427791;
-}
-@media (min-width: 468px) {
-  .barra {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-  }
-  .navegacion__link--clr-secondary {
-    background-color: black;
-  }
-  /*Header.*/
-
-  .boton-header {
-    display: none;
-  }
-  /*Navegacion*/
-  .nose:not(.show) {
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  top: 80%;
+  background-color: $clr-blanco;
+  
+  .navegacion__link {
+    color: $clr-negro;
+    line-height: 3rem;
+    border-bottom: .2px solid black;
     display: block;
-  }
-  .nose {
-    width: 100%;
-  }
-  .navegacion__enlaces {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .navegacion__link:hover {
-    text-decoration: underline;
-    text-shadow: 0px 0px 10px white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    &:hover {
+      color: $clr-principal;
+      border-bottom: .2px solid $clr-principal;
+    }
   }
 }
-@media (min-width: 768px) {
-  /*Barra*/
-  .barra {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 2rem;
+
+.menu__check {
+  appearance: none;
+  cursor: pointer;
+  
+  &:checked ~ .navegacion {
+    display: block;
+    animation-name: aparecer;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
   }
-  .navegacion__enlaces {
+  &:before {
+    font-family: 	$ff-iconos;
+    font-weight: 900;
+    font-size: 3rem;
+    content:  "\f0c9"
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    position: static;
+    display: flex;
     justify-content: space-between;
-    max-width: 50rem;
+    flex-wrap: nowrap;
+  }
+  .navegacion {
+    display: flex;
+    position: static;
+    width: 50%;
+    
+    .navegacion__enlaces {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .navegacion__link {
+      border-bottom: none;
+      font-size: 1.4rem;
+    }
+  }
+  
+  .menu__check {
+    display: none;
   }
 }

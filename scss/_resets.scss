@@ -1,44 +1,32 @@
+/*Fuentes*/
+$ff-principal: 'Poppins', sans-serif;
+$ff-iconos: "Font Awesome 5 Free";
+$clr-principal: #51d1f6;
+$clr-negro: black;
+$clr-blanco: white;
+
+/*Resets*/
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 html {
-  /*Resetear 1rem = 10px*/
+  /*Reset 1rem = 10px*/
   font-size: 62.5%;
 }
 body {
-  font-family: var(--ff-principal);
+  font-family: $ff-principal;
   font-size: 1rem;
 }
-h1,
-h2 {
-  font-weight: bold;
-}
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.6rem;
-}
 p {
-  font-size: 1.5rem;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
+  margin: 0;
 }
 ul {
   padding: 0;
   margin: 0;
 }
-
-/*Utilidades*/
-.icon {
-  font-size: 1.6rem;
+li {
+  list-style: none;
 }
-.border {
-  border: .1rem solid white;
+a {
+  text-decoration: none;
 }

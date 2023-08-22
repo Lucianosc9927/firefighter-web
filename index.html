@@ -5,120 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Firefighter 🔥</title>
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;700&family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
     <!--Bootstrap Css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--My Css-->
     <link rel="stylesheet" href="./css/estilo.css" />
   </head>
   <body>
-    <header class="barra">
-      <div class="collapse nose" id="navbarToggleExternalContent" data-bs-theme="dark"> <!--Enlaces-->
-        <div class="navegacion">
-          <ul class="navegacion__enlaces">
-            <li>
-              <a class="navegacion__link navegacion__link--clr-secondary" href="index.html">Inicio</a>
-            </li>
-            <li>
-              <a class="navegacion__link" href="./pages/cursos.html">Cursos</a>
-            </li>
-            <li>
-              <a class="navegacion__link navegacion__link--clr-secondary" href="./pages/tienda.html">Tienda</a>
-            </li>
-            <li>
-              <a class="navegacion__link" href="./pages/nosotros.html">Nosotros</a>
-            </li>
-            <li>
-              <a class="navegacion__link  navegacion__link--clr-secondary" href="./pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div> <!--Enlaces-->
-      <nav class="navbar navbar-dark">
-        <div class="container-fluid p-0"> 
-          <div class="logo">
-            <div class="logo__marco"> 
-              <div class="logo__imagen">
-                <img src="./img/fireLogo.png" alt="Fuego Logo" />
-              </div>
-            </div>
-            <a href="./index.html">
-              <p class="logo__texto">Fire<span class="logo__texto--thin">fighter</span></p>
-            </a>
-          </div> <!--Logo-->
-          <button class="navbar-toggler border boton-header" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon icon"></span>
-          </button>
-        </div> <!--Logo-->
-      </nav>  
-    </header> 
+    <header class="header barra">
+      <div class="logo">
+        <p class="logo__texto">Bomberos <span class="logo__texto--grande">AR</span></p> 
+      </div>
+      <input class="menu__check" type="checkbox">
+      <nav class="navegacion">
+        <ul class="navegacion__enlaces">
+          <li>
+            <a class="navegacion__link" href="#">Inicio</a>
+          </li>
+          <li>
+            <a class="navegacion__link" href="#">Cursos</a>
+          </li>
+          <li>
+            <a class="navegacion__link" href="#">Tienda</a>
+          </li>
+          <li>
+            <a class="navegacion__link" href="#">Nosotros</a>
+          </li>
+          <li>
+            <a class="navegacion__link" href="#">Contacto</a>
+          </li>
+        </ul> <!--navegacion__enlaces-->
+      </nav>
+    </header>
     <main class="main">
       <section class="hero">
-        <h1 class="hero__titulo">Tu siguiente paso</h1>
-        <div class="hero__contenedor">
-          <p class="hero__texto">En este sitio web encontraras todo lo que necesitas para seguir avanzando en tu carrera profesional como bombero. Capacitaciones, cursos y equipamiento que no solo te va a servir para desenvolverte de una mejor manera a la hora de trabajar, si no que estas colaborando con nosotros para poder seguir creciendo.</p>
-          <img class="hero__img" src="./img/firefighter-hero.jpg" alt="Bombero" />
+        <div class="left">
+          <h1 class="hero__titulo">Cursos y <br>capacitaciones.</h1>
+          <p class="hero__texto">Estudia con nosotros, con los mejores instructores del pais, brindando capacitaciones teoricas y practicas. Vas a poder seguir desarrollandote en tu carrera profesional, el siguiente paso...</p>
+          <button class="boton__hero">
+            Conocer mas
+          </button>
+        </div> <!--left-->
+        <div class="right">
         </div>
-        <a href="./pages/nosotros.html">
-          <button class="hero__boton">Nosotros</button>
-        </a>
-        
       </section>
       <section class="galeria">
-        <h2>Galeria</h2>
-        <div id="carouselExample" class="carousel slide m-5">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/imgGaleria4.jpeg" class="d-block w-100 galeria__img" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="./img/imgGaleria2.jpeg" class="d-block w-100 galeria__img" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="./img/imgGaleria3.jpeg" class="d-block w-100 galeria__img" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="./img/imgGaleria1.jpeg" class="d-block w-100 galeria__img" alt="..." />
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div class="contenedor__articulos">
+            <article class="articulo">
+              <p>1/4</p>
+              <img src="./img/imgGaleria3.jpeg" alt="bombero" class="articulo__img">
+              <p class="articulo__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quibusdam. Ab non aliquid blanditiis voluptatibus animi mollitia quidem soluta numquam similique excepturi labore quas rerum accusamus vero, laboriosam omnis veniam?</p>
+              <a href="#articulo2"><button  class="btn">d</button></a>
+            </article>
+            <article class="articulo" id="articulo2">
+              <p>2/4</p>
+              <img src="./img/imgGaleria4.jpeg" alt="bombero" class="articulo__img">
+              <p class="articulo__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quibusdam. Ab non aliquid blanditiis voluptatibus animi mollitia quidem soluta numquam similique excepturi labore quas rerum accusamus vero, laboriosam omnis veniam?</p>
+              <a href="#" class="btn"><button>d</button></a>
+            </article>
+            <article class="articulo">
+              <p>3/4</p>
+              <img src="./img/imgGaleria3.jpeg" alt="bombero" class="articulo__img">
+              <p class="articulo__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quibusdam. Ab non aliquid blanditiis voluptatibus animi mollitia quidem soluta numquam similique excepturi labore quas rerum accusamus vero, laboriosam omnis veniam?</p>
+              <a href="#" class="btn"><button>d</button></a>
+            </article>
         </div>
-      </section>
+    </section> <!--Galeria-->
+    <section class="tienda">
+      
+      
+    </section>
     </main>
-    <footer class="barra">
+    <footer class="footer barra">
+      <div class="logo">
+        <p class="logo__texto">Bomberos <span class="logo__texto--grande">AR</span></p> 
+      </div>
       <div class="navegacion">
         <ul class="navegacion__enlaces">
           <li>
-            <a class="navegacion__link icon icon-wp navegacion__link--clr-secondary" href="#">Instagram</a>
+            <a class="navegacion__link icon icon-wp" href="#">Instagram</a>
           </li>
           <li>
             <a class="navegacion__link icon icon-ig" href="#">Whatsapp</a>
           </li>
           <li>
-            <a class="navegacion__link icon icon-email navegacion__link--clr-secondary" href="./pages/contacto.html">Contacto</a>
+            <a class="navegacion__link icon icon-email" href="./pages/contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
-      <div class="logo">
-        <!--Logo-->
-        <div class="logo__marco">
-          <div class="logo__imagen">
-            <img src="./img/fireLogo.png" alt="Fuego Logo" />
-          </div>
-        </div>
-        <a href="./index.html">
-          <p class="logo__texto">Fire<span class="logo__texto--thin">fighter</span></p>
-        </a>
-      </div>
+      
       <!--Logo-->
     </footer>
     <!--Bootstrap Js-->
