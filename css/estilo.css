@@ -272,27 +272,33 @@ a {
     .articulo .articulo__imagen {
       grid-area: articulo__imagen; } }
 
-.tienda-index {
+.compra {
   height: 80vh;
-  max-width: 100%;
-  background-image: url(../img/banner-tienda.webp);
+  margin: 0 auto;
+  background-image: url(../img/tienda-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  padding: 2rem; }
-  .tienda-index h2 {
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: center; }
-  .tienda-index button {
-    background-color: transparent;
-    border: none;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: bold;
-    backdrop-filter: opacity(20%); }
-    .tienda-index button::hover {
-      cursor: pointer; }
+  background-size: cover; }
+  .compra .compra__contenedor {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 2rem; }
+    .compra .compra__contenedor .compra__titulo {
+      font-size: 5rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0px 0px 10px #51d1f6; }
+    .compra .compra__contenedor .compra__boton {
+      background-color: #51d1f6;
+      border: none;
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      font-weight: bold;
+      padding: 1.4rem;
+      width: 50%; }
 
 /*Tienda*/
 .producto {

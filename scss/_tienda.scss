@@ -1,31 +1,36 @@
-.tienda-index {
+.compra {
     height: 80vh;
-    max-width: 100%;
-    background-image: url(../img/banner-tienda.webp);
+    margin: 0 auto;
+    background-image: url(../img/tienda-banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 2rem;
 
-    & h2 {
+    .compra__contenedor {
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      padding: 2rem;
+      .compra__titulo {
         font-size: 5rem;
         font-weight: bold;
-        text-align: center;
+        color: white;
+        text-shadow: 0px 0px 10px $clr-principal;
     }
-
-    & button {
-        background-color: transparent;
+      .compra__boton {
+        background-color: $clr-principal;
         border: none;
-        padding: 2rem;
-        font-size: 3rem;
+        text-transform: uppercase;
+        font-size: 2.4rem;
         font-weight: bold;
-        backdrop-filter: opacity(20%);
-
-
-        &::hover {
-            cursor: pointer;
-        }
+        padding: 1.4rem;
+        width: 50%;
+      }
     }
+
+    
 }
 
 
