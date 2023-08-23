@@ -27,13 +27,14 @@
     }
     
     .articulo__imagen {
-      width: 80%;
+      width: 100%;
+      margin: 4rem 0;
       object-fit: contain;
     }
     
     .articulo__texto {
-      font-size: 1.3rem;
-      line-height: 2rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
     }
     
     .articulo__boton {
@@ -53,6 +54,13 @@
       
     }
   }
+
+  .articulo--final {
+    .articulo__texto {
+      font-size: 1.5rem;
+      margin: 3rem 0;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -70,9 +78,12 @@
     }
     .articulo__texto {
       grid-area: articulo__texto;
+      margin: auto 2rem;
     }
     .articulo__imagen  {
       grid-area: articulo__imagen;
     }
   }
 }
+
+
