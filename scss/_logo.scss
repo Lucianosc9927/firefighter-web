@@ -1,6 +1,7 @@
 .logo {
   .logo__texto {
     font-size: 3.5rem;
+    font-weight: 300;
     
     .logo__texto--grande {
       font-size: 4rem;
@@ -13,10 +14,10 @@
 @media (min-width: 768px) {
   .logo {
     .logo__texto {
-      font-size: 4rem;
+      font-size: 5rem;
 
       .logo__texto--grande {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
       }
     }
   }

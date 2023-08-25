@@ -51,7 +51,8 @@ a {
   font-size: 2rem; }
 
 .logo .logo__texto {
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  font-weight: 300; }
   .logo .logo__texto .logo__texto--grande {
     font-size: 4rem;
     font-weight: bold;
@@ -59,9 +60,9 @@ a {
 
 @media (min-width: 768px) {
   .logo .logo__texto {
-    font-size: 4rem; }
+    font-size: 5rem; }
     .logo .logo__texto .logo__texto--grande {
-      font-size: 4.5rem; } }
+      font-size: 5.5rem; } }
 
 .barra {
   height: 20vh;
@@ -98,7 +99,7 @@ a {
   .menu__check:checked ~ .navegacion {
     display: block;
     animation-name: aparecer;
-    animation-duration: .5s;
+    animation-duration: .2s;
     animation-iteration-count: 1; }
   .menu__check:before {
     font-family: "Font Awesome 5 Free";
@@ -146,32 +147,32 @@ a {
     z-index: 500;
     text-align: center; }
   .hero .right {
+    filter: brightness(0.4);
     position: absolute;
     top: 0;
     z-index: 100;
     width: 100%;
     height: 100%;
-    background-image: url("https://cdn.unenvironment.org/styles/article_billboard_image/s3/2022-02/fire-g58eed559b_1920.png?h=6a063a03&itok=PA8OHpHf");
-    filter: blur(1.5px); }
+    background-image: url("https://cdn.unenvironment.org/styles/article_billboard_image/s3/2022-02/fire-g58eed559b_1920.png?h=6a063a03&itok=PA8OHpHf"); }
   .hero .hero__texto, .hero .hero__titulo {
     text-align: center;
-    width: 60%; }
-  .hero .hero__titulo {
-    font-size: 2.5rem;
-    margin: 0 auto;
+    width: 80%;
+    margin: 2rem auto;
     text-shadow: 0px 0px 10px white; }
+  .hero .hero__titulo {
+    font-size: 3.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: black; }
   .hero .hero__texto {
-    line-height: 1.8rem;
-    text-shadow: 0px 0px 10px black;
     color: white;
-    font-size: 1.2rem;
-    margin: 2rem auto; }
+    font-size: 1.8rem; }
   .hero .boton__hero {
     height: 5rem;
     border: none;
     background-color: #51d1f6;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     padding: 1rem;
     width: 95%; }
@@ -181,20 +182,18 @@ a {
 
 @media (min-width: 768px) {
   .hero {
-    position: static;
-    column-gap: 30px;
-    padding-left: 5%;
-    height: 90vh; }
+    position: static; }
     .hero .left {
-      width: 50%;
+      height: 100%;
+      width: 40%;
       display: flex;
       flex-direction: column;
-      row-gap: 30px; }
+      justify-content: space-around;
+      margin: 0 auto; }
     .hero .right {
       position: static;
       width: 50%;
       height: 100%;
-      width: 60%;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -204,13 +203,12 @@ a {
       width: 100%;
       color: black; }
     .hero .hero__titulo {
-      font-size: 2.5rem;
-      margin: 0 auto;
-      text-shadow: 0px 0px 10px white; }
+      font-size: 4rem;
+      font-weight: bold;
+      margin: 0 auto; }
     .hero .hero__texto {
-      line-height: 1.8rem;
-      text-shadow: 0px 0px 10px black;
-      font-size: 1.2rem;
+      line-height: 3rem;
+      font-size: 1.8rem;
       margin: 2rem auto; }
     .hero .boton__hero {
       height: 5rem;
@@ -220,7 +218,7 @@ a {
       font-size: 1.5rem;
       font-weight: bold;
       padding: 1rem;
-      width: 95%; }
+      width: 100%; }
       .hero .boton__hero:hover {
         cursor: pointer;
         filter: brightness(60%); } }
@@ -230,16 +228,14 @@ a {
   background-color: black; }
   .galeria .contenedor__articulos {
     height: 100%;
-    overflow: scroll;
-    scroll-snap-type: y mandatory; }
+    overflow: hidden; }
     .galeria .contenedor__articulos::-webkit-scrollbar {
       display: none; }
   .galeria .articulo {
-    height: 100%;
+    height: 90%;
     color: white;
     text-align: center;
-    padding: 2rem;
-    scroll-snap-align: center; }
+    padding: 2rem; }
     .galeria .articulo .articulo__titulo {
       font-size: 2rem; }
     .galeria .articulo .articulo__imagen {
@@ -249,16 +245,6 @@ a {
     .galeria .articulo .articulo__texto {
       font-size: 1.5rem;
       line-height: 2.5rem; }
-    .galeria .articulo .articulo__boton {
-      background: none; }
-      .galeria .articulo .articulo__boton::before {
-        font: var(--fa-font-solid);
-        content: "\f063";
-        font-size: 2rem;
-        color: white; }
-      .galeria .articulo .articulo__boton:hover {
-        cursor: pointer;
-        background-color: #51d1f6; }
   .galeria .articulo--final .articulo__texto {
     font-size: 1.5rem;
     margin: 3rem 0; }
@@ -276,6 +262,17 @@ a {
       margin: auto 2rem; }
     .articulo .articulo__imagen {
       grid-area: articulo__imagen; } }
+
+.articulo__boton {
+  background: none; }
+  .articulo__boton::before {
+    font: var(--fa-font-solid);
+    content: "\f063";
+    font-size: 2rem;
+    color: white; }
+  .articulo__boton:hover {
+    cursor: pointer;
+    background-color: #51d1f6; }
 
 .compra {
   height: 80vh;

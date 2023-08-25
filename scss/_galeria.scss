@@ -4,8 +4,7 @@
   
   .contenedor__articulos {
     height: 100%;
-    overflow: scroll;
-    scroll-snap-type: y mandatory;
+    overflow: hidden;
     
     &::-webkit-scrollbar {
       display:none;
@@ -14,12 +13,11 @@
   
   
   .articulo {
-    height: 100%;
+    height: 90%;
     color: white;
     text-align: center;
     padding: 2rem;
-    scroll-snap-align: center;
-    
+      
     
     
     .articulo__titulo {
@@ -37,22 +35,7 @@
       line-height: 2.5rem;
     }
     
-    .articulo__boton {
-      background: none;
-      
-      &::before {
-        font: var(--fa-font-solid);
-        content: "\f063";
-        font-size: 2rem;
-        color: white;
-      }
-      
-      &:hover {
-        cursor: pointer;
-        background-color: $clr-principal;
-      }
-      
-    }
+    
   }
 
   .articulo--final {
@@ -87,3 +70,18 @@
 }
 
 
+.articulo__boton {
+  background: none;
+  &::before {
+    font: var(--fa-font-solid);
+    content: "\f063";
+    font-size: 2rem;
+    color: white;
+  }
+  
+  &:hover {
+    cursor: pointer;
+    background-color: $clr-principal;
+  }
+  
+}
