@@ -1,18 +1,25 @@
 .footer {
-    text-align: center;
+  text-align: center;
+  background-color: $clr-negro;
+  color: $clr-blanco;
 
+  .navegacion {
+    display: block;
+    position: static;
+    background-color: $clr-negro;
 
-    .navegacion {
-        display: block;
-        position: static;
+    .navegacion__link {
+      color: $clr-principal;
 
-
+      &:hover {
+        color: $clr-blanco;
+      }
     }
+  }
 }
 
-
 @media (min-width: 768px) {
-    .footer .navegacion {
-        margin: 0 auto;
-    }
+  .footer .navegacion {
+    margin: 0 auto;
+  }
 }

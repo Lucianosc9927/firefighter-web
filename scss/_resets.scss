@@ -1,10 +1,3 @@
-/*Fuentes*/
-$ff-principal: 'Poppins', sans-serif;
-$ff-iconos: "Font Awesome 5 Free";
-$clr-principal: #51d1f6;
-$clr-negro: black;
-$clr-blanco: white;
-
 /*Resets*/
 * {
   box-sizing: border-box;
@@ -13,6 +6,7 @@ html {
   /*Reset 1rem = 10px*/
   font-size: 62.5%;
 }
+
 body {
   font-family: $ff-principal;
   font-size: 1rem;

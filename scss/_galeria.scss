@@ -106,12 +106,7 @@
 }
 .derecha {
   background: none;
-  &::before {
-    font: var(--fa-font-solid);
-    content: "\f060";
-    font-size: 3rem;
-    color: $clr-principal;
-  }
+  
   
   &:hover {
     cursor: pointer;

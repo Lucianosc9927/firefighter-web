@@ -18,9 +18,9 @@
   <body>
     <header class="header barra">
       <div class="logo">
-        <p class="logo__texto">Bomberos <span class="logo__texto--grande">AR</span></p> 
+        <a href="#"><p class="logo__texto">Bomberos <span class="logo__texto--grande">AR</span></p></a> 
       </div>
-      <input class="menu__check" type="checkbox">
+      <input class="menu__check icon icon-menu" type="checkbox">
       <nav class="navegacion">
         <ul class="navegacion__enlaces">
           <li>
@@ -46,7 +46,7 @@
         <div class="left">
           <h1 class="hero__titulo">Cursos y <br>capacitaciones.</h1>
           <p class="hero__texto">Estudia con nosotros, con los mejores instructores del pais, brindando capacitaciones teoricas y practicas. Vas a poder seguir desarrollandote en tu carrera profesional, da el siguiente paso. Incendio estructurales, maniobras de rescate en altura, materiales peligrosos, primeros auxilios, rescate vehicular y mucho mas...</p>
-          <button class="boton__hero">
+          <button class="boton">
             Conocer mas
           </button>
         </div> <!--left-->
@@ -61,12 +61,11 @@
             <img class="articulo__imagen" src="./img/articulo-1.jpg">
             <p class="articulo__texto">"En diciembre de 1883 se desató un voraz incendio en  Corti y Rivas, un reconocido comercio ubicado cerca de la ribera y en lo que hoy es la avenida Almirante Brown. Las lenguas de fuego salían por las puertas y ventanas del comercio y las llamas se esparcían velozmente amenazando propagarse y extenderse hacía las construcciones vecinas."</p>
             <div class="articulo__navegacion">
-              <a href="#articulo__2" class="articulo__boton derecha"></a>
-              <a href="#articulo__2" class="articulo__boton izquierda"></a>
+              <a href="#articulo__2" class="articulo__boton icono icon-izquierda"></a>
+              <a href="#articulo__2" class="articulo__boton icono icon-derecha"></a>
             </div>
-            
           </article> <!--articulo-->
-
+          <a href="#articulo__2" class="articulo__boton icono icon-izquierda"></a>
           <article class="articulo" id="articulo__2">
             <p class="articulo__index">2/4</p>
             <h3 class="articulo__titulo">Reseña Historica Bombero Voluntarios</h3>
@@ -82,7 +81,7 @@
     <section class="compra">
       <div class="compra__contenedor">
         <h2 class="compra__titulo">Tienda</h2>
-        <a href="./pages/tienda.html"><button class="compra__boton">Ver mas</button></a>
+        <a href="./pages/tienda.html"><button class="boton">Ver mas</button></a>
       </div>
     </section>
     </main>
@@ -93,13 +92,13 @@
       <div class="navegacion">
         <ul class="navegacion__enlaces">
           <li>
-            <a class="navegacion__link icon icon-wp" href="#">Instagram</a>
+            <a class="navegacion__link icon icon-ig" href="https://www.instagram.com" target="_blank">Instagram</a>
           </li>
           <li>
-            <a class="navegacion__link icon icon-ig" href="#">Whatsapp</a>
+            <a class="navegacion__link icon icon-wp" href="https://www.whatsapp.com" target="_blank">Whatsapp</a>
           </li>
           <li>
-            <a class="navegacion__link icon icon-email" href="./pages/contacto.html">Contacto</a>
+            <a class="navegacion__link icon icon-email" href="./pages/contacto.html" target="_blank">Contacto</a>
           </li>
         </ul>
       </div>

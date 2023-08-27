@@ -1,22 +1,44 @@
 .icon::before {
-  font: var(--fa-font-brands);
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
   font-size: 2rem;
   padding-right: 1rem;
   color: var(--clr-rojo);
 }
 .icon-wp::before {
-  content: var(--icon-whatsapp);
+  content: "\f232";
 }
 .icon-ig::before {
-  content: var(--icon-instagram);
+  content: "\f16d";
 }
 .icon-email::before {
   font: var(--fa-font-regular);
-  content: var(--icon-email);
+  content: "\f1d8";
   font-size: 2rem;
 }
-.icon-arrowDown::before {
-  font: var(--fa-font-solid);
-  content: "\f063";
-  font-size: 2rem;
+.icon-menu::before {
+  font-family: $ff-iconos;
+  font-weight: 900;
+  font-size: 3rem;
+  content: "\f0c9";
+}
+.icon-derecha::before {
+  font-family: $ff-iconos;
+  font-weight: 900;
+  font-size: 3rem;
+  content: "\f054";
+  background-color: $clr-blanco;
+  color: $clr-negro;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+.icon-izquierda::before {
+  font-family: $ff-iconos;
+  font-weight: 900;
+  font-size: 3rem;
+  content: "\f053";
+  background-color: $clr-blanco;
+  color: $clr-negro;
+  border-radius: 50%;
+  padding: 1.5rem;
 }
