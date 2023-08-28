@@ -471,6 +471,21 @@ textarea {
     .nosotros .nosotros__texto {
       font-size: 1.6rem; } }
 
+.cursos {
+  text-align: center; }
+  .cursos .cursos__titulo {
+    font-weight: bold;
+    font-size: 3rem; }
+  .cursos .cursos__descripcion {
+    font-size: 1.8rem; }
+
+select {
+  display: block;
+  margin-bottom: 2rem; }
+
+.form-cursos {
+  margin: 2rem auto; }
+
 .footer {
   text-align: center;
   background-color: black;

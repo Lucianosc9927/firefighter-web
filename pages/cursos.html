@@ -47,73 +47,60 @@
       </nav>
     </header>
     <main class="main container">
-      <h1 class="text-center">Cursos</h1>
-      <div class="card-group">
-        <div class="card">
-          <img src="../img/curso-1.jpg" class="card-img-top" alt="Reanimacion Cardio Pulmonar" />
-          <div class="card-body">
-            <h5 class="card-title">Primeros Auxilios</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <section class="cursos">
+        <h1 class="cursos__titulo">Cursos</h1>
+        <p class="cursos__descripcion">Actualmente tenemos disponibles estos tres cursos, te dejamos abajo de todo un formulario para que puedas eligir algunos de ellos.</p>
+        <div class="card-group m-4">
+          <div class="card">
+            <img src="../img/curso-1.jpg" class="card-img-top" alt="Reanimacion Cardio Pulmonar" />
+            <div class="card-body">
+              <h5 class="card-title">Primeros Auxilios</h5>
+              <p class="card-text">Conocimientos sobre técnicas básicas en Primeros Auxilios para asistir a quienes sufran un incidente o enfermedad repentina, hasta la llegada de profesionales de la salud.</div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Duracion 1 mes</small>
+            </div>
           </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Duracion 1 mes</small>
+          <div class="card">
+            <img src="../img/curso-2.jpg" class="card-img-top" alt="Rescatistas en Altura" />
+            <div class="card-body">
+              <h5 class="card-title">Rescate en Altura</h5>
+              <p class="card-text">Conocimientos sobre técnicas básicas en Primeros Auxilios para asistir a quienes sufran un incidente o enfermedad repentina, hasta la llegada de profesionales de la salud.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Duracion 4 meses</small>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="../img/curso-2.jpg" class="card-img-top" alt="Rescatistas en Altura" />
-          <div class="card-body">
-            <h5 class="card-title">Rescate en Altura</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Duracion 4 meses</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/curso-3.jpg" class="card-img-top" alt="Materiales Peligrosos" />
-          <div class="card-body">
-            <h5 class="card-title">Manejo de Materiales Peligrosos</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Duracion: 2 semanas</small>
-          </div>
-        </div>
-      </div>
-      <!--.card-group-->
-      <div class="card-group">
-        <div class="card">
-          <img src="../img/curso-1.jpg" class="card-img-top" alt="Reanimacion Cardio Pulmonar" />
-          <div class="card-body">
-            <h5 class="card-title">Primeros Auxilios</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Duracion 1 mes</small>
+          <div class="card">
+            <img src="../img/curso-3.jpg" class="card-img-top" alt="Materiales Peligrosos" />
+            <div class="card-body">
+              <h5 class="card-title">Manejo de Materiales Peligrosos</h5>
+              <p class="card-text">Brindar a la ciudad una respuesta técnica frente a los incidentes que se presenten en el marco del riesgo tecnológico, asociados con el almacenamiento, producción, transformación, transporte de sustancias y residuos químicos peligrosos, bajo estándares de calidad, con capital humano capacitado y entrenado técnicamente, equipos de alta tecnología, e integrando modelos de respuesta a este tipo de incidentes y experticia en el tema.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Duracion: 2 semanas</small>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img src="../img/curso-2.jpg" class="card-img-top" alt="Rescatistas en Altura" />
-          <div class="card-body">
-            <h5 class="card-title">Rescate en Altura</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Duracion 4 meses</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../img/curso-3.jpg" class="card-img-top" alt="Materiales Peligrosos" />
-          <div class="card-body">
-            <h5 class="card-title">Manejo de Materiales Peligrosos</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Duracion: 2 semanas</small>
-          </div>
-        </div>
-      </div>
-      <!--.card-group-->
+        <!--.card-group-->
+      </section>
+      <form class="formulario form-cursos">
+        <legend>Inscribite en nuestros cursos</legend>
+
+        <select name="cursos" id="cursos">
+          <option value="" selected disabled>Selecciona</option>
+          <option value="primerosAuxilios">Primeros Auxilios</option>
+          <option value="primerosAuxilios">Rescate en Altura</option>
+          <option value="primerosAuxilios">Materiales Peligrosos</option>
+        </select>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+
+        <input type="submit" class="formulario__boton" />
+      </form>
     </main>
     <footer class="footer barra">
       <div class="logo">
