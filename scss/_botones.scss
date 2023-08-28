@@ -1,4 +1,4 @@
-.boton {
+@mixin boton ($ancho:95%) {
   height: 5rem;
   border: none;
   background-color: $clr-principal;
@@ -6,7 +6,7 @@
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem;
-  width: 95%;
+  width: $ancho;
 
   &:hover {
     cursor: pointer;

@@ -25,20 +25,22 @@
 .icon-derecha::before {
   font-family: $ff-iconos;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 1rem;
   content: "\f054";
   background-color: $clr-blanco;
   color: $clr-negro;
   border-radius: 50%;
   padding: 1.5rem;
+  width: 50%;
 }
 .icon-izquierda::before {
   font-family: $ff-iconos;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 1rem;
   content: "\f053";
   background-color: $clr-blanco;
   color: $clr-negro;
   border-radius: 50%;
   padding: 1.5rem;
+  width: 50%;
 }
