@@ -12,6 +12,7 @@
   width: 90%;
   padding: 1.5rem;
   font-size: 1.2rem;
+  margin: 2rem 0;
 
   .formulario__boton {
     @include boton($ancho: 100%);
@@ -31,6 +32,8 @@ textarea {
 }
 
 .informacion {
+  color: $clr_principal;
+  text-align: center;
   .redes__titulo {
     font-size: 2.5rem;
   }
