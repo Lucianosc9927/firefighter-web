@@ -401,7 +401,7 @@ a {
     font-weight: bold;
     padding: 1rem;
     width: 100%;
-    margin: auto; }
+    margin: 0 auto; }
     .formulario .formulario__boton:hover {
       cursor: pointer;
       filter: brightness(60%); }
@@ -439,6 +439,34 @@ textarea {
       font-weight: bold; }
   .formulario {
     width: 50%; } }
+
+.nosotros {
+  text-align: center;
+  margin: 2rem 0; }
+  .nosotros .nosotros__titulo {
+    font-size: 3rem;
+    font-weight: bold; }
+  .nosotros .nosotros__texto {
+    font-size: 1.5rem; }
+  .nosotros .nosotros__imagen {
+    max-width: 30rem;
+    width: 100%;
+    object-fit: contain; }
+
+@media (min-width: 768px) {
+  .nosotros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .nosotros .nosotros__titulo {
+      width: 100%;
+      font-size: 4rem; }
+    .nosotros .nosotros__texto,
+    .nosotros .nosotros__imagen {
+      width: 50%; }
+    .nosotros .nosotros__texto {
+      font-size: 1.6rem; } }
 
 .footer {
   text-align: center;
