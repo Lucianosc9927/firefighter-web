@@ -46,236 +46,67 @@
         <!--navegacion__enlaces-->
       </nav>
     </header>
-    <main class="main container-fluid">
+    <main class="main container-fluid p-0">
       <section class="tienda">
-        <h1 class="text-center">Tienda</h1>
-        <div class="tienda__informacion">
+        <h1 class="text-center tienda__titulo">Tienda</h1>
+        <div class="m-4">
           <h2 class="tienda__informacion">¿Como comprar?</h2>
-          <p class="text-center">Seleccion los articulos del catalago que econtraras a continuacion. Luego en el formulario que encontraras debajo te pedimos tus datos y no estaremos comunicando via email para finalizar la compra.</p>
+          <p class="tienda__texto">Seleccion los articulos del catalago que econtraras a continuacion. Luego en el formulario que encontraras debajo te pedimos tus datos y no estaremos comunicando via email para finalizar la compra.</p>
           <i class="fa-solid fa-truck-fast fa-2xl" style="color: #d93a3a"></i>
         </div>
-        <div class="tienda__informacion">
-          <h2>¿En que destinamos el dinero?</h2>
-          <p class="text-center">Todo lo recaudado se reinvierte para seguir creciendo y ofreciendo mejores cursos y practicas. Compra de equipamiento y materiales escensiales para el trabajo.</p>
+        <div class="m-4">
+          <h2 class="tienda__informacion">¿En que destinamos el dinero?</h2>
+          <p class="tienda__texto">Todo lo recaudado se reinvierte para seguir creciendo y ofreciendo mejores cursos y practicas. Compra de equipamiento y materiales escensiales para el trabajo.</p>
           <i class="fa-solid fa-handshake-angle fa-2xl" style="color: #62d331"></i>
         </div>
       </section>
-      <section class="tienda row row-gap-3 bg-secondary p-3">
-        <div class="producto col-xl-3 col-md-4 col-sm-6">
-          <h3 class="producto__nombre">Remera Firefighter</h3>
-          <img class="producto__imagen" src="../img/productoD-1.png" alt="Remera bomberos" />
-          <form class="producto__descripcion">
-            <fieldset class="producto__talle">
-              <legend>Talle</legend>
-              <fieldset>
-                <input type="radio" id="L" name="talle" value="L" />
-                <label for="L">L</label>
-                <input type="radio" id="XL" name="talle" value="XL" />
-                <label for="XL">XL</label>
-                <input type="radio" id="M" name="talle" value="M" />
-                <label for="M">M</label>
-              </fieldset>
-              <fieldset class="producto__color">
-                <legend>Color</legend>
-                <input type="radio" id="negro" name="color" value="negro" />
-                <label for="negro">Negro</label>
-                <input type="radio" id="blanco" name="color" value="blanco" />
-                <label for="blanco">Blanco</label>
-                <input type="radio" id="azul" name="color" value="azul" />
-                <label for="azul">Azul</label>
-              </fieldset>
-              <fieldset class="producto__cantidad">
-                <legend>Cantidad</legend>
-                <input type="number" name="cantidad" id="cantidad" min="1" max="4" />
-                <label for="cantidad">Cantidad<sub>(Maximo 4)</sub></label>
-              </fieldset>
-            </fieldset>
-          </form>
-        </div>
-        <div class="producto col-xl-3 col-md-4 col-sm-6">
-          <h3 class="producto__nombre">Gorra Firefighter</h3>
-          <img class="producto__imagen" src="../img/producto-2.png" alt="Gorra bomberos" />
-          <form class="producto__descripcion">
-            <fieldset class="producto__talle">
-              <fieldset>
-                <legend>Talle</legend>
-                <input type="radio" id="L" name="talle" value="L" />
-                <label for="L">L</label>
-                <input type="radio" id="XL" name="talle" value="XL" />
-                <label for="css">XL</label>
-                <input type="radio" id="M" name="talle" value="M" />
-                <label for="M">M</label>
-              </fieldset>
-              <fieldset class="producto__color">
-                <legend>Color</legend>
-                <input type="radio" id="negro" name="color" value="negro" />
-                <label for="negro">Negro</label>
-                <input type="radio" id="blanco" name="color" value="blanco" />
-                <label for="blanco">Blanco</label>
-                <input type="radio" id="azul" name="color" value="azul" />
-                <label for="azul">Azul</label>
-              </fieldset>
-              <fieldset class="producto__cantidad">
-                <legend>Cantidad</legend>
-                <input type="number" name="cantidad" id="cantidad" min="1" max="4" />
-                <label for="cantidad">Cantidad<sub>(Maximo 4)</sub></label>
-              </fieldset>
-            </fieldset>
-          </form>
-        </div>
-        <div class="producto col-xl-3 col-md-4 col-sm-6">
-          <h3 class="producto__nombre">Capucha Ignifuga</h3>
-          <img class="producto__imagen" src="../img/producto-3.png" alt="Capucha ignifuga bomberos" />
-          <form class="producto__descripcion">
-            <fieldset class="producto__talle">
-              <fieldset>
-                <legend>Talle</legend>
-                <input type="radio" id="L" name="talle" value="L" />
-                <label for="L">L</label>
-                <input type="radio" id="XL" name="talle" value="XL" />
-                <label for="css">XL</label>
-                <input type="radio" id="M" name="talle" value="M" />
-                <label for="M">M</label>
-              </fieldset>
-              <fieldset class="producto__color">
-                <legend>Color</legend>
-                <input type="radio" id="negro" name="color" value="negro" />
-                <label for="negro">Negro</label>
-                <input type="radio" id="blanco" name="color" value="blanco" />
-                <label for="blanco">Blanco</label>
-                <input type="radio" id="azul" name="color" value="azul" />
-                <label for="azul">Azul</label>
-              </fieldset>
-              <fieldset class="producto__cantidad">
-                <legend>Cantidad</legend>
-                <input type="number" name="cantidad" id="cantidad" min="1" max="4" />
-                <label for="cantidad">Cantidad<sub>(Maximo 4)</sub></label>
-              </fieldset>
-            </fieldset>
-          </form>
-        </div>
-        <div class="producto col-xl-3 col-md-4 col-sm-6">
-          <h3 class="producto__nombre">Guantes</h3>
-          <img class="producto__imagen" src="../img/producto-4.png" alt="Guantes bomberos" />
-          <form class="producto__descripcion">
-            <fieldset class="producto__talle">
-              <fieldset>
-                <legend>Talle</legend>
-                <input type="radio" id="L" name="talle" value="L" />
-                <label for="L">L</label>
-                <input type="radio" id="XL" name="talle" value="XL" />
-                <label for="css">XL</label>
-                <input type="radio" id="M" name="talle" value="M" />
-                <label for="M">M</label>
-              </fieldset>
-              <fieldset class="producto__color">
-                <legend>Color</legend>
-                <input type="radio" id="negro" name="color" value="negro" />
-                <label for="negro">Negro</label>
-                <input type="radio" id="blanco" name="color" value="blanco" />
-                <label for="blanco">Blanco</label>
-                <input type="radio" id="azul" name="color" value="azul" />
-                <label for="azul">Azul</label>
-              </fieldset>
-              <fieldset class="producto__cantidad">
-                <legend>Cantidad</legend>
-                <input type="number" name="cantidad" id="cantidad" min="1" max="4" />
-                <label for="cantidad">Cantidad<sub>(Maximo 4)</sub></label>
-              </fieldset>
-            </fieldset>
-          </form>
-        </div>
-        <div class="producto col-xl-3 col-md-4 col-sm-6">
-          <h3 class="producto__nombre">Cuerda</h3>
-          <img class="producto__imagen" src="../img/producto-5.png" alt="Cuerda de rescate bomberos" />
-          <form class="producto__descripcion">
-            <fieldset class="producto__talle">
-              <fieldset class="producto__color">
-                <legend>Color</legend>
-                <input type="radio" id="negro" name="color" value="negro" />
-                <label for="negro">Negro</label>
-                <input type="radio" id="blanco" name="color" value="blanco" />
-                <label for="blanco">Blanco</label>
-                <input type="radio" id="azul" name="color" value="azul" />
-                <label for="azul">Azul</label>
-              </fieldset>
-              <fieldset class="producto__cantidad">
-                <legend>Cantidad</legend>
-                <input type="number" name="cantidad" id="cantidad" min="1" max="4" />
-                <label for="cantidad">Cantidad<sub>(Maximo 4)</sub></label>
-              </fieldset>
-            </fieldset>
-          </form>
-        </div>
-        <div class="producto col-xl-3 col-md-4 col-sm-6">
-          <h3 class="producto__nombre">Mosqueton</h3>
-          <img class="producto__imagen" src="../img/producto-6.png" alt="Mosqueton bomberos" />
-          <form class="producto__descripcion">
-            <fieldset class="producto__talle">
-              <fieldset class="producto__color">
-                <legend>Color</legend>
-                <input type="radio" id="negro" name="color" value="negro" />
-                <label for="negro">Negro</label>
-                <input type="radio" id="blanco" name="color" value="blanco" />
-                <label for="blanco">Blanco</label>
-                <input type="radio" id="azul" name="color" value="azul" />
-                <label for="azul">Azul</label>
-              </fieldset>
-              <fieldset class="producto__cantidad">
-                <legend>Cantidad</legend>
-                <input type="number" name="cantidad" id="cantidad" min="1" max="4" />
-                <label for="cantidad">Cantidad<sub>(Maximo 4)</sub></label>
-              </fieldset>
-            </fieldset>
-          </form>
-        </div>
-        <div class="producto col-xl-3 col-md-4 col-sm-6">
-          <h3 class="producto__nombre">Navaja Rescate</h3>
-          <img class="producto__imagen" src="../img/producto-7.png" alt="Navaja bomberos" />
-          <form class="producto__descripcion">
-            <fieldset class="producto__talle">
-              <fieldset class="producto__color">
-                <legend>Color</legend>
-                <input type="radio" id="negro" name="color" value="negro" />
-                <label for="negro">Negro</label>
-                <input type="radio" id="blanco" name="color" value="blanco" />
-                <label for="blanco">Blanco</label>
-                <input type="radio" id="azul" name="color" value="azul" />
-                <label for="azul">Azul</label>
-              </fieldset>
-              <fieldset class="producto__cantidad">
-                <legend>Cantidad</legend>
-                <input type="number" name="cantidad" id="cantidad" min="1" max="4" />
-                <label for="cantidad">Cantidad<sub>(Maximo 4)</sub></label>
-              </fieldset>
-            </fieldset>
-          </form>
-        </div>
-        <div class="producto col-xl-3 col-md-4 col-sm-6">
-          <h3 class="producto__nombre">Llave de Ajustar Uniones</h3>
-          <img class="producto__imagen" src="../img/producto-8.png" alt="Llave de ajustar uniones bomberos" />
-          <form class="producto__descripcion">
-            <fieldset class="producto__color">
-              <fieldset>
-                <legend>Color</legend>
-                <input type="radio" id="negro" name="color" value="negro" />
-                <label for="negro">Negro</label>
-                <input type="radio" id="blanco" name="color" value="blanco" />
-                <label for="blanco">Blanco</label>
-                <input type="radio" id="azul" name="color" value="azul" />
-                <label for="azul">Azul</label>
-              </fieldset>
-              <fieldset class="producto__cantidad">
-                <legend>Cantidad</legend>
-                <input type="number" name="cantidad" id="cantidad" min="1" max="4" />
-                <label for="cantidad">Cantidad<sub>(Maximo 4)</sub></label>
-              </fieldset>
-            </fieldset>
-          </form>
+
+      <section class="productos container-fluid">
+        <div class="productos__contenedor row">
+          <div class="producto col-sm-6 col-md-4 col-lg-3">
+            <img class="producto__imagen" src="../img/productoD-1.png" alt="Remera" />
+            <h3 class="producto__titulo">Remera Bomberos</h3>
+            <input type="checkbox" />
+          </div>
+          <div class="producto col-sm-6 col-md-4 col-lg-3">
+            <img class="producto__imagen" src="../img/producto-2.png" alt="Gorra" />
+            <h3 class="producto__titulo">Gorra Bomberos</h3>
+            <input type="checkbox" />
+          </div>
+          <div class="producto col-sm-6 col-md-4 col-lg-3">
+            <img class="producto__imagen" src="../img/producto-3.png" alt="Capucha Ignifuga" />
+            <h3 class="producto__titulo">Capucha Ignifuga</h3>
+            <input type="checkbox" />
+          </div>
+          <div class="producto col-sm-6 col-md-4 col-lg-3">
+            <img class="producto__imagen" src="../img/producto-4.png" alt="Guantes de Incendio" />
+            <h3 class="producto__titulo">Guantes de Incendio</h3>
+            <input type="checkbox" />
+          </div>
+          <div class="producto col-sm-6 col-md-4 col-lg-3">
+            <img class="producto__imagen" src="../img/producto-5.png" alt="Cuerdin de rescate" />
+            <h3 class="producto__titulo">Cuerdin de rescate</h3>
+            <input type="checkbox" />
+          </div>
+          <div class="producto col-sm-6 col-md-4 col-lg-3">
+            <img class="producto__imagen" src="../img/producto-6.png" alt="Mosqueton" />
+            <h3 class="producto__titulo">Mosqueton</h3>
+            <input type="checkbox" />
+          </div>
+          <div class="producto col-sm-6 col-md-4 col-lg-3">
+            <img class="producto__imagen" src="../img/producto-7.png" alt="Navaja" />
+            <h3 class="producto__titulo">Navaja</h3>
+            <input type="checkbox" />
+          </div>
+          <div class="producto col-sm-6 col-md-4 col-lg-3">
+            <img class="producto__imagen" src="../img/producto-8.png" alt="Llave de Ajustar Uniones" />
+            <h3 class="producto__titulo">Llave de Ajustar Uniones</h3>
+            <input type="checkbox" />
+          </div>
         </div>
       </section>
+
       <section class="comprar m-3">
-        <h2 class="text-center">Comprar</h2>
         <form class="formulario m-auto">
           <div class="contenedor__formulario">
             <label for="nombre">Nombre:</label>
@@ -302,18 +133,16 @@
       <div class="navegacion">
         <ul class="navegacion__enlaces">
           <li>
-            <a class="navegacion__link icon icon-wp" href="#">Instagram</a>
+            <a class="navegacion__link icon icon-ig" href="https://www.instagram.com" target="_blank">Instagram</a>
           </li>
           <li>
-            <a class="navegacion__link icon icon-ig" href="#">Whatsapp</a>
+            <a class="navegacion__link icon icon-wp" href="https://www.whatsapp.com" target="_blank">Whatsapp</a>
           </li>
           <li>
-            <a class="navegacion__link icon icon-email" href="contacto.html">Contacto</a>
+            <a class="navegacion__link icon icon-email" href="./pages/contacto.html">Contacto</a>
           </li>
         </ul>
       </div>
-
-      <!--Logo-->
     </footer>
     <!--Bootstrap Js-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

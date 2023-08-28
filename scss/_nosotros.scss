@@ -1,12 +1,12 @@
 .nosotros {
-    text-align: center;
-    margin: 2rem 0;
+  text-align: center;
+  margin: 2rem 0;
 
   .nosotros__titulo {
     font-size: 3rem;
     font-weight: bold;
   }
- 
+
   .nosotros__texto {
     font-size: 1.5rem;
   }
@@ -19,23 +19,23 @@
 }
 
 @media (min-width: 768px) {
-    .nosotros {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+  .nosotros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 
-        .nosotros__titulo {
-            width: 100%;
-            font-size: 4rem;
-        }
-        .nosotros__texto,
-        .nosotros__imagen {
-            width: 50%;
-        }
-
-        .nosotros__texto {
-            font-size: 1.6rem;
-        }
+    .nosotros__titulo {
+      width: 100%;
+      font-size: 4rem;
     }
+    .nosotros__texto,
+    .nosotros__imagen {
+      width: 50%;
+    }
+
+    .nosotros__texto {
+      font-size: 1.6rem;
+    }
+  }
 }

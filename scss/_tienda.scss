@@ -1,59 +1,73 @@
 .compra {
-    height: 80vh;
-    margin: 0 auto;
-    background-image: url(../img/tienda-banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  height: 80vh;
+  margin: 0 auto;
+  background-image: url(../img/tienda-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    .compra__contenedor {
-      margin-left: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      padding: 2rem;
-      .compra__titulo {
-        font-size: 5rem;
-        font-weight: bold;
-        color: white;
-        text-shadow: 0px 0px 10px $clr-principal;
+  .compra__contenedor {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 2rem;
+    .compra__titulo {
+      font-size: 5rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0px 0px 10px $clr-principal;
     }
-      .compra__boton {
-        @include boton($ancho: 50%);
-      }
+    .compra__boton {
+      @include boton($ancho: 50%);
     }
-
-    
+  }
 }
 
+.tienda {
+  text-align: center;
+  background-color: $clr-negro;
+  padding: 1rem;
+  color: $clr-blanco;
 
-/*Tienda*/
-.producto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .tienda__titulo {
+    font-size: 3rem;
+    font-weight: bold;
   }
-  .producto__formulario {
-    margin-top: 1rem;
+
+  .tienda__texto {
+    font-size: 1.5rem;
   }
-  .producto__descripcion {
-    background-color: rgb(223, 223, 223);
-    padding: 2rem;
-    border-radius: 8px;
-  }
-  .producto__imagen {
-    width: 20rem;
-  }
-  .producto__selector {
-    width: 3rem;
-    height: 3rem;
-  }
-  
+
   .tienda__informacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 5px;
-    margin: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $clr-principal;
   }
+}
+
+.producto {
+  text-align: center;
+
+  .producto__imagen {
+    max-width: 20rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .tienda {
+    .tienda__titulo {
+      font-size: 4rem;
+    }
+
+    .tienda__texto {
+      font-size: 1.5rem;
+    }
+
+    .tienda__informacion {
+      font-size: 2.5rem;
+    }
+  }
+}

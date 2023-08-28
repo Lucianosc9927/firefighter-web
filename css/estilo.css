@@ -112,7 +112,7 @@ a {
   .navegacion .navegacion__link {
     color: black;
     line-height: 3rem;
-    border-bottom: .2px solid black;
+    border-bottom: 0.2px solid black;
     display: block;
     text-transform: uppercase;
     font-size: 1.4rem; }
@@ -126,7 +126,7 @@ a {
   .menu__check:checked ~ .navegacion {
     display: block;
     animation-name: aparecer;
-    animation-duration: .2s;
+    animation-duration: 0.2s;
     animation-iteration-count: 1; }
 
 @keyframes aparecer {
@@ -176,7 +176,8 @@ a {
     width: 100%;
     height: 100%;
     background-image: url("../img/hero-img.webp"); }
-  .hero .hero__texto, .hero .hero__titulo {
+  .hero .hero__texto,
+  .hero .hero__titulo {
     text-align: center;
     width: 80%;
     margin: 2rem auto;
@@ -220,7 +221,8 @@ a {
       background-position: center;
       background-repeat: no-repeat;
       filter: none; }
-    .hero .hero__texto, .hero .hero__titulo {
+    .hero .hero__texto,
+    .hero .hero__titulo {
       text-align: left;
       width: 100%;
       color: black; }
@@ -351,33 +353,34 @@ a {
         cursor: pointer;
         filter: brightness(60%); }
 
-/*Tienda*/
+.tienda {
+  text-align: center;
+  background-color: black;
+  padding: 1rem;
+  color: white; }
+  .tienda .tienda__titulo {
+    font-size: 3rem;
+    font-weight: bold; }
+  .tienda .tienda__texto {
+    font-size: 1.5rem; }
+  .tienda .tienda__informacion {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #51d1f6; }
+
 .producto {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  text-align: center; }
+  .producto .producto__imagen {
+    max-width: 20rem;
+    width: 100%; }
 
-.producto__formulario {
-  margin-top: 1rem; }
-
-.producto__descripcion {
-  background-color: #dfdfdf;
-  padding: 2rem;
-  border-radius: 8px; }
-
-.producto__imagen {
-  width: 20rem; }
-
-.producto__selector {
-  width: 3rem;
-  height: 3rem; }
-
-.tienda__informacion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 5px;
-  margin: 20px; }
+@media (min-width: 768px) {
+  .tienda .tienda__titulo {
+    font-size: 4rem; }
+  .tienda .tienda__texto {
+    font-size: 1.5rem; }
+  .tienda .tienda__informacion {
+    font-size: 2.5rem; } }
 
 .contacto {
   display: flex;
