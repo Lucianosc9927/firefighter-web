@@ -54,10 +54,10 @@ a {
 .icon-derecha::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 1.5rem;
   content: "\f054";
   background-color: white;
-  color: black;
+  color: #51d1f6;
   border-radius: 50%;
   padding: 1.5rem;
   width: 50%; }
@@ -65,10 +65,10 @@ a {
 .icon-izquierda::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 1.5rem;
   content: "\f053";
   background-color: white;
-  color: black;
+  color: #51d1f6;
   border-radius: 50%;
   padding: 1.5rem;
   width: 50%; }
@@ -237,89 +237,64 @@ a {
     .hero .boton__hero {
       width: 100%; } }
 
-.galeria {
+.carrousel {
   height: 100vh;
-  background-color: black; }
-  .galeria .contenedor__articulos {
-    height: 100%;
-    overflow: hidden; }
-    .galeria .contenedor__articulos::-webkit-scrollbar {
-      display: none; }
+  background-color: black;
+  overflow: hidden;
+  padding: 1rem 2rem; }
 
 .articulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  align-content: space-around;
   height: 100%;
-  color: white;
   text-align: center;
-  padding: 1rem; }
-  .articulo .articulo__titulo {
-    font-size: 2rem;
-    margin: 0; }
-  .articulo .articulo__imagen {
-    max-width: 100%;
-    height: 15rem;
-    margin: 1rem 0;
-    object-fit: cover; }
-  .articulo .articulo__texto {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    width: 100%;
-    margin: 1px auto;
-    background-color: rgba(128, 128, 128, 0.226);
-    border-radius: 8px;
-    padding: 0.8rem; }
-  .articulo .articulo__index {
-    font-size: 1rem;
-    text-align: left; }
-  .articulo .articulo--final .articulo__texto {
-    font-size: 1.5rem;
-    margin: 3rem 0; }
+  color: white;
+  margin-bottom: 1rem; }
+  .articulo .articulo__header {
+    border: 1px solid grey;
+    margin-bottom: 0.8rem;
+    padding: 0.2rem; }
+    .articulo .articulo__header .articulo__titulo {
+      font-size: 2.2rem; }
+  .articulo .articulo__contenido {
+    background-color: rgba(29, 26, 26, 0.562); }
+    .articulo .articulo__contenido .articulo__texto {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      padding: 0.6rem; }
+    .articulo .articulo__contenido .articulo__imagen {
+      width: 100%; }
+      .articulo .articulo__contenido .articulo__imagen:hover {
+        filter: brightness(150%); }
+  .articulo .articulo__navegacion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem; }
+    .articulo .articulo__navegacion .articulo__index {
+      display: flex;
+      width: 100%;
+      justify-content: space-around; }
+      .articulo .articulo__navegacion .articulo__index .articulo__index--seleccionado {
+        color: #51d1f6;
+        border-bottom: 1px solid #51d1f6; }
 
-@media (min-width: 768px) {
-  .articulo {
-    display: grid;
-    align-items: center;
-    column-gap: 4rem;
-    grid-template-areas: "articulo__index articulo__titulo articulo__titulo articulo__titulo" "btn-izquierda articulo__texto articulo__imagen btn-derecha"; }
-    .articulo .articulo__index {
-      grid-area: articulo__index;
-      font-size: 2rem; }
-    .articulo .articulo__titulo {
-      font-size: 4rem;
-      grid-area: articulo__titulo;
-      text-align: center; }
-    .articulo .articulo__texto {
-      grid-area: articulo__texto;
-      margin: auto 2rem;
+.pagina-seleccionada {
+  border: 1px solid #51d1f6; }
+
+@media (min-width: 750px) {
+  .articulo .articulo__header .articulo__titulo {
+    font-size: 3rem; }
+  .articulo .articulo__contenido {
+    display: flex; }
+    .articulo .articulo__contenido .articulo__imagen {
+      width: 55%;
+      height: 35rem;
+      object-fit: cover; }
+    .articulo .articulo__contenido .articulo__texto {
       font-size: 1.5rem;
-      line-height: 3rem; }
-    .articulo .articulo__imagen {
-      grid-area: articulo__imagen;
-      max-height: 35rem;
-      height: 100%; }
-    .articulo .icon-izquierda {
-      grid-area: btn-izquierda; }
-    .articulo .icon-derecha {
-      grid-area: btn-derecha; } }
-
-.izquierda {
-  background: none;
-  grid-area: izquierda; }
-  .izquierda::before {
-    font: var(--fa-font-solid);
-    content: "\f061";
-    font-size: 2rem;
-    color: #51d1f6; }
-  .izquierda:hover {
-    cursor: pointer; }
-
-.derecha {
-  background: none; }
-  .derecha:hover {
-    cursor: pointer; }
+      line-height: 2.5rem; }
+  .articulo__navegacion .articulo__index {
+    font-size: 1.2rem; } }
 
 .compra {
   height: 80vh;
