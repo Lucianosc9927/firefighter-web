@@ -1,20 +1,45 @@
-.cursos {
+.cursos__header {
   text-align: center;
+  background-color: $clr-negro;
+  color: $clr-blanco;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
 
   .cursos__titulo {
-    font-weight: bold;
     font-size: 3rem;
+    color: $clr-principal;
+    font-weight: bold;
   }
-  .cursos__descripcion {
+  .cursos__introduccion {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+}
+
+.curso {
+  .curso__titulo {
     font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
   }
-}
 
-select {
-  display: block;
-  margin-bottom: 2rem;
-}
+  .curso__temario {
+    li {
+      list-style: decimal;
+      font-size: 1.2rem;
+    }
+  }
 
-.form-cursos {
-  margin: 2rem auto;
+  .curso__img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .curso__footer {
+    background-color: $clr-principal;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }

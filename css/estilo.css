@@ -343,17 +343,74 @@ a {
     font-weight: bold;
     color: #51d1f6; }
 
+.productos {
+  max-width: 950px;
+  margin: 0 auto;
+  justify-content: space-between; }
+
 .producto {
-  text-align: center; }
-  .producto .producto__imagen {
+  text-align: center;
+  background-color: rgba(29, 26, 26, 0.562);
+  max-width: 25rem;
+  width: 100%;
+  height: 30rem;
+  margin: 2rem;
+  border: 1px solid black; }
+  .producto .producto__detalles {
+    visibility: hidden;
+    text-align: left;
+    background-color: black;
+    color: white;
+    margin: 0 1rem;
+    padding: 0.8rem; }
+    .producto .producto__detalles :is(.producto__talle, .producto__color) {
+      display: flex;
+      justify-content: space-between; }
+      .producto .producto__detalles :is(.producto__talle, .producto__color) legend {
+        width: 50%; }
+      .producto .producto__detalles :is(.producto__talle, .producto__color) input[type="radio"] {
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%; }
+        .producto .producto__detalles :is(.producto__talle, .producto__color) input[type="radio"]:checked {
+          outline: 2px solid #51d1f6; }
+      .producto .producto__detalles :is(.producto__talle, .producto__color) .producto__talle--clr-rojo {
+        background-color: red; }
+      .producto .producto__detalles :is(.producto__talle, .producto__color) .producto__talle--clr-azul {
+        background-color: blue; }
+      .producto .producto__detalles :is(.producto__talle, .producto__color) .producto__talle--clr-blanco {
+        background-color: white; }
+    .producto .producto__detalles .producto__talle input::before {
+      font-size: 1rem;
+      color: white; }
+    .producto .producto__detalles .producto__talle .producto__talle--s::before {
+      content: "S"; }
+    .producto .producto__detalles .producto__talle .producto__talle--l::before {
+      content: "L"; }
+    .producto .producto__detalles .producto__talle .producto__talle--xl::before {
+      content: "XL"; }
+  .producto .producto__precio {
+    font-size: 2rem;
+    font-weight: bold; }
+  .producto .producto__img {
     max-width: 20rem;
     width: 100%; }
+  .producto .producto__seleccionar:checked ~ .producto__img {
+    max-width: 10rem; }
+  .producto .producto__seleccionar:checked ~ .producto__detalles {
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    visibility: visible; }
 
 @media (min-width: 768px) {
   .tienda .tienda__titulo {
     font-size: 4rem; }
   .tienda .tienda__texto {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto; }
   .tienda .tienda__informacion {
     font-size: 2.5rem; } }
 
@@ -448,20 +505,40 @@ textarea {
     .nosotros .nosotros__texto {
       font-size: 1.6rem; } }
 
-.cursos {
+.cursos__header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 1.5rem; }
+  .cursos__header .cursos__titulo {
+    font-size: 3rem;
+    color: #51d1f6;
+    font-weight: bold; }
+  .cursos__header .cursos__introduccion {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.5rem; }
+
+.curso .curso__titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
   text-align: center; }
-  .cursos .cursos__titulo {
-    font-weight: bold;
-    font-size: 3rem; }
-  .cursos .cursos__descripcion {
-    font-size: 1.8rem; }
 
-select {
-  display: block;
-  margin-bottom: 2rem; }
+.curso .curso__temario li {
+  list-style: decimal;
+  font-size: 1.2rem; }
 
-.form-cursos {
-  margin: 2rem auto; }
+.curso .curso__img {
+  height: 250px;
+  object-fit: cover; }
+
+.curso .curso__footer {
+  background-color: #51d1f6;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem; }
 
 .footer {
   text-align: center;

@@ -47,12 +47,92 @@
   }
 }
 
+.productos {
+  max-width: 950px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .producto {
   text-align: center;
+  background-color: rgba(29, 26, 26, 0.562);
+  max-width: 25rem;
+  width: 100%;
+  height: 30rem;
+  margin: 2rem;
+  border: 1px solid black;
 
-  .producto__imagen {
+  .producto__detalles {
+    visibility: hidden;
+    text-align: left;
+    background-color: $clr-negro;
+    color: $clr-blanco;
+    margin: 0 1rem;
+    padding: 0.8rem;
+
+    :is(.producto__talle, .producto__color) {
+      display: flex;
+      justify-content: space-between;
+
+      legend {
+        width: 50%;
+      }
+
+      input[type="radio"] {
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+
+        &:checked {
+          outline: 2px solid $clr-principal;
+        }
+      }
+
+      .producto__talle--clr-rojo {
+        background-color: red;
+      }
+      .producto__talle--clr-azul {
+        background-color: blue;
+      }
+      .producto__talle--clr-blanco {
+        background-color: $clr-blanco;
+      }
+    }
+
+    .producto__talle {
+      input::before {
+        font-size: 1rem;
+        color: $clr-blanco;
+      }
+      .producto__talle--s::before {
+        content: "S";
+      }
+      .producto__talle--l::before {
+        content: "L";
+      }
+      .producto__talle--xl::before {
+        content: "XL";
+      }
+    }
+  }
+
+  .producto__precio {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .producto__img {
     max-width: 20rem;
     width: 100%;
+  }
+  .producto__seleccionar:checked ~ .producto__img {
+    max-width: 10rem;
+  }
+  .producto__seleccionar:checked ~ .producto__detalles {
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    visibility: visible;
   }
 }
 
@@ -64,6 +144,8 @@
 
     .tienda__texto {
       font-size: 1.5rem;
+      max-width: 400px;
+      margin: 0 auto;
     }
 
     .tienda__informacion {
