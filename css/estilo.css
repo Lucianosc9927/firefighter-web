@@ -34,7 +34,7 @@ a {
   width: 90%;
   padding: 1.5rem;
   font-size: 1.2rem;
-  margin: 2rem 0; }
+  margin: 2rem auto; }
   .formulario .formulario__boton {
     height: 5rem;
     border: none;
@@ -49,8 +49,7 @@ a {
       cursor: pointer;
       filter: brightness(60%); }
   .formulario input,
-  .formulario textarea,
-  .formulario select {
+  .formulario textarea {
     display: block;
     width: 100%;
     margin-bottom: 2rem; }
