@@ -34,6 +34,7 @@ textarea {
 .informacion {
   color: $clr_principal;
   text-align: center;
+  padding: 2rem;
   .redes__titulo {
     font-size: 2.5rem;
   }
@@ -65,5 +66,6 @@ textarea {
 
   .formulario {
     width: 50%;
+    margin: 1rem auto;
   }
 }

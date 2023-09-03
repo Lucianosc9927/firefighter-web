@@ -7,7 +7,7 @@
 
   .cursos__titulo {
     font-size: 3rem;
-    color: $clr-principal;
+    text-transform: uppercase;
     font-weight: bold;
   }
   .cursos__introduccion {
@@ -41,5 +41,14 @@
     font-weight: bold;
     text-align: center;
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cursos__header {
+  
+    .cursos__titulo {
+      font-size: 4rem;
+    }
   }
 }
