@@ -5,31 +5,31 @@
   justify-content: center;
 }
 
-.formulario {
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  width: 90%;
-  padding: 1.5rem;
-  font-size: 1.2rem;
-  margin: 2rem 0;
+//.formulario {
+//  background-color: black;
+//  color: white;
+//  text-transform: uppercase;
+//  width: 90%;
+//  padding: 1.5rem;
+//  font-size: 1.2rem;
+//  margin: 2rem 0;
 
-  .formulario__boton {
-    @include boton($ancho: 100%);
-    margin: 0 auto;
-  }
-}
+//  .formulario__boton {
+//    @include boton($ancho: 100%);
+//    margin: 0 auto;
+//  }
+//}
 
-input,
-textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 2rem;
-}
+//input,
+//textarea {
+//  display: block;
+//  width: 100%;
+//  margin-bottom: 2rem;
+//}
 
-textarea {
-  resize: none;
-}
+//textarea {
+//  resize: none;
+//}
 
 .informacion {
   color: $clr_principal;
